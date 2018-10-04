@@ -28,6 +28,8 @@ You will need to:
 
 5. Optional (but *strongly* recommended): frequently commit changes and push to GitHub.
 
+We strongly recommend that you start working on this immediately so you will have time to get any help that you need.  If you have questions about this assignment outside of class, please [post an Issue](https://github.com/IBIEM/community/issues) to the discussion forum.
+
 
 ## Grading
 For this assignment and future assignments we will be checking for:
@@ -45,5 +47,5 @@ For this assignment and future assignments we will be checking for:
   - You may also want [examples of what not to do](https://xkcd.com/1296/)
 
 ### SessionInfo
-Including a `SessionInfo` statement at the end of your R Notebook is good reproducibility practice.  This time it is included already in `challenge3_assignment.Rmd`; next time you might not be so lucky! 
+Including a `SessionInfo` statement at the end of your R Notebook is good reproducibility practice.
 
