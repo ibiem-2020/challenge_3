@@ -35,7 +35,7 @@ We strongly recommend that you start working on this immediately so you will hav
 For this assignment and future assignments we will be checking for:
 
 | Weight (%) | Component                  |
-|------------+----------------------------|
+|------------|----------------------------|
 |         70 | Correct Result             |
 |         15 | Code Quality               |
 |         10 | Git Commit Message Quality |
