@@ -1,6 +1,6 @@
 # Challenge 3: R Strikes Back
-- *Assigned: October 4, 2018*
-- *Due: at 6pm on October 19, 2018*
+- *Assigned: October 6, 2018*
+- *Due: at 6pm on October 26, 2018*
 
 # Assignment
 You should have received an email invitation to access this assigment in Github Classroom.  If you haven't received it, please [post an Issue](https://github.com/IBIEM/community/issues)
