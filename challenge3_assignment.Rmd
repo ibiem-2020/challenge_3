@@ -1,5 +1,5 @@
 ---
-title: "Challenge 3 Solutions"
+title: "Challenge 3"
 subtitle: "R Strikes Back"
 output:
   html_document:
@@ -22,7 +22,7 @@ You need to load the gapminder data into a dataframe.  You can do this directly 
 ```{r}
 
 ```
---------------------------------------
+
 
 
 2. Use `if` and `else` statements to check if there are any records in gapminder for the country *Uruguay*.  Your code should print one message if there *are records* for *Uruguay*, and a *different message* if there are *not records*.
@@ -30,7 +30,7 @@ You need to load the gapminder data into a dataframe.  You can do this directly 
 ```{r}
 
 ```
---------------------------------------
+
 
 
 3. Use `if` and `else` statements to check if there are any records in gapminder for a country with a population less than *50000* .  Your code should print one message if there *are records* with a population less than *50000*, and a *different message* if there are *not*.
@@ -46,7 +46,7 @@ You need to load the gapminder data into a dataframe.  You can do this directly 
 ```{r}
 
 ```
---------------------------------------
+
 
 
 5. Use a `for` loop to loop over the continents in gapminder and print how many countries are present in gapminder from each continent.  Warning: most countries have multiple entries be sure not to count a country more than once if it has more than one.  You might want to use the `unique` function.
@@ -62,14 +62,14 @@ You need to load the gapminder data into a dataframe.  You can do this directly 
 ```{r}
 
 ```
---------------------------------------
+
 
 7. In the plot above two countries are outliers, which makes the rest of the data difficult to view.  Make the same plot as above, but with a log10 scale on the y-axis so it is easier to view the rest of the data.
 
 ```{r}
 
 ```
---------------------------------------
+
 
 8. The data is still hard to view because there are so many countries.  Try making a separate plot for each continent (*hint:* use `facet_wrap`).  Also, with so many countries, the points seem to make things more confusing, so for this plot, either get rid of them or make them smaller.
 
@@ -86,7 +86,7 @@ You need to load the gapminder data into a dataframe.  You can do this directly 
 ```{r}
 
 ```
---------------------------------------
+
 
 10. `gdpPercap` is calculated as total GDP divided by population.  Make a new column in the gapminder data frame called `gdp_total` that has the total GDP for that entry. Show the head of the data frame to make sure it worked. 
 
@@ -94,7 +94,7 @@ You need to load the gapminder data into a dataframe.  You can do this directly 
 ```{r}
 
 ```
---------------------------------------
+
 
 11. Make a new column in the gapminder data frame called `newer` that is `TRUE` if the row is from a year more recent than *1970* and `FALSE` otherwise. Show the head of the data frame to make sure it worked. 
 
@@ -110,7 +110,7 @@ You need to load the gapminder data into a dataframe.  You can do this directly 
 ```{r}
 
 ```
---------------------------------------
+
 
 13. Write function called `getCountries`.  `getCountries` should take two arguments: (A) a continent name and (B) the gapminder dataframe. `getCountries` should return a *character vector* listing the names of the countries in the continent that was provided as an argument.  The vector should only list each country once! 
 
