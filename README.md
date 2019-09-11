@@ -2,7 +2,7 @@
 - *Assigned: September 6, 2019*
 - *Due: at 6pm on September 20, 2019*
 
-# Assignment
+## Assignment
 You should have received an email invitation to access this assigment in Github Classroom.  If you haven't received it, please [post an Issue](https://github.com/IBIEM/community/issues)
 
 The goal of this challenge is to help you get more familiar with the material covered in the following lessons from [SWC: R for Reproducible Scientific Analysis](http://swcarpentry.github.io/r-novice-gapminder/)
@@ -42,10 +42,10 @@ For this assignment and future assignments we will be checking for:
 |          5 | SessionInfo                |
 
 
-### Git Commit Message Quality
+#### Git Commit Message Quality
   - For some helpful hints [search the internet for "writing good commit messages"](https://duckduckgo.com/?q=writing+good+commit+messages)
   - You may also want [examples of what not to do](https://xkcd.com/1296/)
 
-### SessionInfo
+## SessionInfo
 Including a `SessionInfo` statement at the end of your R Notebook is good reproducibility practice.
 
