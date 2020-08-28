@@ -57,7 +57,7 @@ You need to load the gapminder data into a dataframe.  You can do this directly 
 
 ## ggplot2
 
-6. Plot population as a function of year as a scatterplot with lines connecting all the points for a country.  Color the lines and points by continent.
+6. Plot population as a function of year. Make a scatterplot with lines connecting all the points for a country.  Color the lines and points by continent.
 
 ```{r}
 
@@ -90,7 +90,7 @@ You need to load the gapminder data into a dataframe.  You can do this directly 
 
 10. `gdpPercap` is calculated as total GDP divided by population.  Make a new column in the gapminder data frame called `gdp_total` that has the total GDP for that entry. Show the head of the data frame to make sure it worked. 
 
-*Note:* If you check your results by hand, they may be a little off because you are only seeing the first four decimal places of `gdpPercap`.
+*Note:* If you check your results by hand, they will be a bit different than results you get here.  That is because, by default, R is only showing you the first four decimal places of `gdpPercap`, but there are actually more than this.
 ```{r}
 
 ```
@@ -112,7 +112,7 @@ You need to load the gapminder data into a dataframe.  You can do this directly 
 ```
 
 
-13. Write function called `getCountries`.  `getCountries` should take two arguments: (A) a continent name and (B) the gapminder dataframe. `getCountries` should return a *character vector* listing the names of the countries in the continent that was provided as an argument.  The vector should only list each country once! 
+13. Write a function named `getCountries`.  `getCountries` should take two arguments: (A) a continent name and (B) the gapminder dataframe. `getCountries` should return a *character vector* listing the names of the countries in the continent that was provided as an argument.  The vector should only list each country once! 
 
 Next show that `getCountries` works by using it to retrieve a vector of all the countries in *Africa*.
 
