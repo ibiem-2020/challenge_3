@@ -1,0 +1,128 @@
+---
+title: "Challenge 3"
+subtitle: "R Strikes Back"
+output:
+  html_document:
+    df_print: paged
+---
+
+## Load Data
+
+You need to load the gapminder data into a dataframe.  You can do this directly from the Internet or download a local copy first.  The URL for the gapminder data is <https://raw.githubusercontent.com/swcarpentry/r-novice-gapminder/gh-pages/_episodes_rmd/data/gapminder_data.csv>
+
+```{r}
+
+```
+
+## Control Flow
+
+### `if` statements
+1. Use an `if` statement to check if there are any records in gapminder from the year *1967*.  Your code should print a message *if and only if* there are records from the year *1967* present.
+
+```{r}
+
+```
+
+
+
+2. Use `if` and `else` statements to check if there are any records in gapminder for the country *Uruguay*.  Your code should print one message if there *are records* for *Uruguay*, and a *different message* if there are *not records*.
+
+```{r}
+
+```
+
+
+
+3. Use `if` and `else` statements to check if there are any records in gapminder for a country with a population less than *50000* .  Your code should print one message if there *are records* with a population less than *50000*, and a *different message* if there are *not*.
+
+```{r}
+
+```
+
+### Loops
+
+4. Use a `for` loop to loop over the integers from one to eight, printing the integer itself and the *cube* of the integer. *Hint:* `x^y` is `x` to the `y`th power
+
+```{r}
+
+```
+
+
+
+5. Use a `for` loop to loop over the continents in gapminder and print how many countries are present in gapminder from each continent.  Warning: most countries have multiple entries be sure not to count a country more than once if it has more than one.  You might want to use the `unique` function.
+
+```{r}
+
+```
+
+## ggplot2
+
+6. Plot population as a function of year. Make a scatterplot with lines connecting all the points for a country.  Color the lines and points by continent.
+
+```{r}
+
+```
+
+
+7. In the plot above two countries are outliers, which makes the rest of the data difficult to view.  Make the same plot as above, but with a log10 scale on the y-axis so it is easier to view the rest of the data.
+
+```{r}
+
+```
+
+
+8. The data is still hard to view because there are so many countries.  Try making a separate plot for each continent (*hint:* use `facet_wrap`).  Also, with so many countries, the points seem to make things more confusing, so for this plot, either get rid of them or make them smaller.
+
+```{r}
+
+```
+
+## Vectorization
+
+9. Earlier you used a `for` loop to print the cube of of each of the numbers from one through eight.  Now use vectorization to do the same (you don't need to print one through eight, just their cubes). 
+
+*Hint:* if the result isn't what you expect, check the order of operations, or try using the `seq` function.
+
+```{r}
+
+```
+
+
+10. `gdpPercap` is calculated as total GDP divided by population.  Make a new column in the gapminder data frame called `gdp_total` that has the total GDP for that entry. Show the head of the data frame to make sure it worked. 
+
+*Note:* If you check your results by hand, they will be a bit different than results you get here.  That is because, by default, R is only showing you the first four decimal places of `gdpPercap`, but there are actually more than this.
+```{r}
+
+```
+
+
+11. Make a new column in the gapminder data frame called `newer` that is `TRUE` if the row is from a year more recent than *1970* and `FALSE` otherwise. Show the head of the data frame to make sure it worked. 
+
+```{r}
+
+```
+## Functions Explained
+12. A good way to use your own functions in multiple projects is to put the function definitions in an R script file, then `source` that file.  To try this do the following:
+    1. Make a new R script file named `challenge3_functions.R`
+    2. Into `challenge3_functions.R` you should paste the definition for `calcGDP` from the SWC lesson.  You should use the longer definition of `calcGDP` that starts out with: `calcGDP <- function(dat, year=NULL, country=NULL) {`
+    3. `source` your script and use calcGDP to print the GDP (and other data in the row) for Panama in 1962
+  
+```{r}
+
+```
+
+
+13. Write a function named `getCountries`.  `getCountries` should take two arguments: (A) a continent name and (B) the gapminder dataframe. `getCountries` should return a *character vector* listing the names of the countries in the continent that was provided as an argument.  The vector should only list each country once! 
+
+Next show that `getCountries` works by using it to retrieve a vector of all the countries in *Africa*.
+
+```{r}
+
+```
+
+# Session Info
+Always print `sessionInfo` for reproducibility!
+```{r}
+
+```
+
